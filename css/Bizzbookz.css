@@ -9,7 +9,7 @@ body {
   height:19px;
   position:fixed;
   width:100%;
-  background-color: rgb(243,243,243);
+  background-color: rgb(244,244,244);
   top: 0;
 	left: -20px;
   box-shadow:0 3px rgb(220,220,220);
@@ -22,9 +22,9 @@ body {
 .custom-header .custom-nav .custom-navbar-menu {
   margin: 0;
   padding: 0;
-	position: absolute;
-	left: calc(50vw - 450px);
-	width: 900px;
+	position: relative;
+	text-align: right;
+	margin-right: 5%;
 }
 
 .custom-header .custom-nav .custom-navbar-menu li {
@@ -345,7 +345,7 @@ body {
 	display: inline-block;
 	font-size: 0.70vw;
 	color: rgba(255,255,255,0.2);
-	left: calc(50vw - 19%);
+	left: 43%;
 	padding-left: 0.1%;
   padding-right: 0.1%;
 }
@@ -410,6 +410,7 @@ body {
 .info-column-classes {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 	width: 75%;
 	margin-left: 12.5%;
 	margin-right: 12.5%;
