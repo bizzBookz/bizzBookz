@@ -331,9 +331,9 @@ body {
 
 #myCarousel .custom-indicators .custom-carousel-indicators {
 	top: 93%;
-	width: 8%;
+	width: 8em;
 	height: 4%;
-	max-width: 100px;
+	max-width: 8em;
 	max-height: 40px;
 	z-index: 800;
 	text-align: center;
@@ -345,7 +345,7 @@ body {
 	display: inline-block;
 	font-size: 0.70vw;
 	color: rgba(255,255,255,0.2);
-	left: 43%;
+	left: 50.5em;
 	padding-left: 0.1%;
   padding-right: 0.1%;
 }
