@@ -505,9 +505,8 @@ body {
 	text-decoration: none;
 }
 
-.footer-center .social-media-share .custom-Facebook .fa.fa-facebook-official.fa-2x:hover {
+.footer-center .social-media-share .custom-Facebook:hover .fa.fa-facebook-official.fa-2x {
 	color: #3b5998;
-	text-decoration: none;
 }
 
 /* Footer center Twitter color on hover */
@@ -517,7 +516,6 @@ body {
 
 .footer-center .social-media-share .custom-Twitter:hover .fa.fa-twitter-square.fa-2x {
 	color: #4099ff;
-	text-decoration: none;
 }
 
 /* Footer center Linkedin color on hover */
@@ -527,7 +525,6 @@ body {
 
 .footer-center .social-media-share .custom-Linkedin:hover .fa.fa-linkedin-square.fa-2x {
 	color: #4875B4;
-	text-decoration: none;
 }
 
 /* Footer center Google+ color on hover */
@@ -537,7 +534,6 @@ body {
 
 .footer-center .social-media-share .custom-Googleplus:hover .fa.fa-google-plus-square.fa-2x {
 	color: #d34836;
-	text-decoration: none;
 }
 
 /* Footer right newsletter */
