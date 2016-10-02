@@ -365,7 +365,7 @@ body {
 .blue-space-about {
 	font-family: 'Roboto', sans-serif;
 	color: rgb(222,222,222);
-	min-height: 27vw;
+	min-height: 30vw;
 	height: auto;
 	background-color: rgba(82,93,113,0.9);
 	padding: 0;
@@ -387,7 +387,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	margin-top: 0;
-	padding: 0 0 1% 0;
+	padding: 3% 0 1% 0;
 	font-size: 2em;
 }
 
@@ -410,7 +410,7 @@ body {
 .info-title {
 	display: flex;
 	justify-content: center;
-	font-size: 2em;
+	font-size: 2vw;
 	padding-top: 5%;
 }
 
@@ -423,14 +423,17 @@ body {
 	margin-left: 12.5%;
 	margin-right: 12.5%;
 	margin-top: 2%;
-	font-size: 1em;
+	font-size: 1vw;
+	line-height: 1.4;
 	height: 70%;
 }
 
 /* White section flexbox icon */
 .info-icon {
 	margin: 8%;
-	padding-bottom: 5%;
+	padding-bottom: 3%;
+	width: 4vw;
+	height: auto;
 }
 
 /* White section flexbox text */
@@ -440,13 +443,13 @@ body {
 	flex-grow: 0;     /* do not grow   - initial value: 0 */
 	flex-shrink: 0;   /* do not shrink - initial value: 1 */
 	flex-basis: 17vw;
-	padding-bottom: 10%;
+	padding-bottom: 5%;
 }
 
 /* White section flexbox text header */
 .title-classes {
 	font-weight: 400;
-	font-size: 1.3em;
+	font-size: 1.3vw;
 }
 
 /* footer */
@@ -639,7 +642,7 @@ body {
 /* Business Class page */
 
 /* Business Class page white title section */
-.Business-Class-info {
+.Business-Class-title {
 	font-family: 'Roboto', sans-serif;
 	color: black;
 	min-height: 35vw;
@@ -653,7 +656,7 @@ body {
 	align-items: center;
 }
 
-.Business-Class-info .Business-Class-info-container {
+.Business-Class-title .Business-Class-title-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -662,7 +665,7 @@ body {
 	height: 100%;
 }
 
-.Business-Class-info .Business-Class-info-container .top-title {
+.Business-Class-title .Business-Class-title-container .top-title {
 	font-size: 3.8em;
 	font-weight: 100;
 	margin-top: 0;
@@ -672,7 +675,7 @@ body {
 	margin-top: 1.3em;
 }
 
-.Business-Class-info .Business-Class-info-container .top-text {
+.Business-Class-title .Business-Class-title-container .top-text {
 	width: 40%;
 	font-family: inherit;
 	font-weight: 100;
@@ -683,7 +686,7 @@ body {
 	padding: 0;
 }
 
-.Business-Class-info .Business-Class-info-container hr {
+.Business-Class-title .Business-Class-title-container hr {
 	background: rgba(66,172,202,0.9);
   background-image: linear-gradient(to right,#fff,transparent,#fff);
 	margin: 4em 0 0 0;
@@ -695,3 +698,194 @@ body {
 }
 
 /* Business Class blue info */
+
+.Business-class-info {
+	background-color: rgba(82,93,113,0.9);
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	min-height: 35vw;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.Business-class-info .Business-class-icon-text {
+	width: 70vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.Business-class-info .Business-class-icon-text > img {
+	padding: 1em 2em 2em 0;
+	width: 12.8%;
+	height: auto;
+}
+
+.Business-class-info .Business-class-icon-text .Business-class-icon-text-info1 {
+	width: 55vw;
+	font-family: inherit;
+	font-weight: 300;
+	font-size: 1vw;
+	line-height: 1.6em;
+	align-self: flex-start;
+	text-align: justify;
+}
+
+/* Business Class onderdelen (see also white-space-info) */
+.Business-Class-onderdelen-subtext {
+	text-align: center;
+	font-size: 1vw;
+}
+
+.Business-Class-onderdelen-subtext > a {
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	font-size: 1vw;
+}
+
+.Business-Class-onderdelen-subtext > a:hover {
+	text-decoration: none;
+	color: rgb(82,93,113);
+	font-weight: 700;
+}
+
+/* Business Class Levering*/
+.Business-class-levering {
+	background-color: rgba(82,93,113,0.9);
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	min-height: 32vw;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.Business-class-levering .Business-class-levering-title {
+	width: 100%;
+	font-weight: 100;
+}
+
+.Business-class-levering .Business-class-levering-text {
+	display: flex;
+	max-width: 40%;
+  font-family: inherit;
+  font-weight: 100;
+  line-height: 1.5;
+  font-size: 1.3vw;
+  text-align: center;
+  margin: 2vw 0 1vh 0;
+  padding: 0;
+}
+
+/* Levering table title*/
+.Business-class-table-title {
+	margin-bottom: 1vh;
+}
+
+.Business-class-table-title > h3 {
+   color: #fafafa;
+   font-size: 1.15vw;
+   font-weight: 100;
+   font-family: "Roboto", sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+	 height: 1.5em;
+}
+
+/* Levering table */
+.Business-class-table {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: auto;
+  margin: 0;
+  max-width: 50%;
+	min-width: 35%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+.Business-class-table-text-header {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size: 1.1vw;
+  font-weight: 300;
+  padding: 1em 1em 1em 1em;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+}
+
+.Business-Class-table-container {
+  border-bottom: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size: 1.1vw;
+  font-weight: 100;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+.Business-Class-text {
+  background:rgb(220,220,220);
+	padding: 1em 1em 1em 1em;
+  text-align: center;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 1.1vw;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+.Business-Class-levering-bottomtext {
+	max-width: 40%;
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 0.9vw;
+  text-align: center;
+  margin: 1vh 0 5vh 0;
+  padding: 0;
+}
+
+/* Modules */
+.Business-class-modules-column {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+	padding-top: 2%;
+}
+
+.Business-Class-modules-segment {
+	text-align: center;
+	margin: 0 0.2% 0 0.2%;
+	flex-grow: 0;     /* do not grow   - initial value: 0 */
+	flex-shrink: 0;   /* do not shrink - initial value: 1 */
+	flex-basis: 17vw;
+	margin-bottom: 3%;
+}
+
+.Business-Class-modules-segment img {
+	width: 75%;
+}
+
+.Business-Class-modules-segment > p {
+	text-align: center;
+	font-weight: 300;
+	font-size: 1vw;
+	color: black;
+	margin-top: 2%;
+	width: 80%;
+	padding-left: 10%;
+}
