@@ -106,7 +106,7 @@ body {
 
 .custom-header .custom-nav .custom-share .custom-dropdown-icon .custom-Facebook .fa.fa-facebook-official.fa-2x:hover {
 	display: block;
-	color: #3b5998;
+	color: rgb(59, 89, 152);
 	text-decoration: none;
 }
 
@@ -117,7 +117,7 @@ body {
 
 .custom-header .custom-nav .custom-share .custom-dropdown-icon .custom-Twitter:hover .fa.fa-twitter-square.fa-2x {
 	display: block;
-	color: #4099ff;
+	color: rgb(64, 153, 255);
 	text-decoration: none;
 }
 
@@ -128,7 +128,7 @@ body {
 
 .custom-header .custom-nav .custom-share .custom-dropdown-icon .custom-Linkedin:hover .fa.fa-linkedin-square.fa-2x {
 	display: block;
-	color: #4875B4;
+	color: rgb(72, 117, 180);
 	text-decoration: none;
 }
 
@@ -139,7 +139,7 @@ body {
 
 .custom-header .custom-nav .custom-share .custom-dropdown-icon .custom-Googleplus:hover .fa.fa-google-plus-square.fa-2x {
 	display: block;
-	color: #d34836;
+	color: rgb(211, 72, 54);
 	text-decoration: none;
 }
 
@@ -509,7 +509,7 @@ body {
 }
 
 .footer-center .social-media-share .custom-Facebook:hover .fa.fa-facebook-official.fa-2x {
-	color: #3b5998;
+	color: rgb(59, 89, 152);
 }
 
 /* Footer center Twitter color on hover */
@@ -518,7 +518,7 @@ body {
 }
 
 .footer-center .social-media-share .custom-Twitter:hover .fa.fa-twitter-square.fa-2x {
-	color: #4099ff;
+	color: rgb(64, 153, 255);
 }
 
 /* Footer center Linkedin color on hover */
@@ -527,7 +527,7 @@ body {
 }
 
 .footer-center .social-media-share .custom-Linkedin:hover .fa.fa-linkedin-square.fa-2x {
-	color: #4875B4;
+	color: rgb(72, 117, 180);
 }
 
 /* Footer center Google+ color on hover */
@@ -687,6 +687,8 @@ body {
 	padding: 0;
 }
 
+/* Gradients */
+
 .Class-title .Class-title-container .Business {
 	background: rgba(66,172,202,0.9);
   background-image: linear-gradient(to right,#fff,transparent,#fff);
@@ -700,6 +702,17 @@ body {
 
 .Class-title .Class-title-container .Game {
 	background: rgba(207,90,74,0.9);
+  background-image: linear-gradient(to right,#fff,transparent,#fff);
+	margin: 4em 0 0 0;
+	width: 30%;
+  border: 0;
+  height: .4em;
+	align-self: center;
+	margin-bottom: 5%;
+}
+
+.Class-title .Class-title-container .Master {
+	background: rgba(194,165,54,0.9);
   background-image: linear-gradient(to right,#fff,transparent,#fff);
 	margin: 4em 0 0 0;
 	width: 30%;
@@ -734,7 +747,7 @@ body {
 }
 
 .Class-info .Class-icon-text > img {
-	padding: 1em 2em 2em 0;
+	padding: 1em 2em 1em 0;
 	width: 12.8%;
 	height: auto;
 }
@@ -753,19 +766,6 @@ body {
 .Class-onderdelen-subtext {
 	text-align: center;
 	font-size: 1vw;
-}
-
-.Class-onderdelen-subtext > a {
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	font-size: 1vw;
-}
-
-.Class-onderdelen-subtext > a:hover {
-	text-decoration: none;
-	color: rgb(82,93,113);
-	font-weight: 700;
 }
 
 /* Business Class Levering*/
@@ -979,3 +979,337 @@ body {
 	width: 80%;
 	padding-left: 10%;
 }
+
+/* Master class calendar section */
+
+.Master.Class-calendar {
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	color: black;
+	min-height: 32vw;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.Master.Class-calendar .Class-calendar-title {
+	width: 100%;
+	font-weight: 300;
+}
+
+.Master.Class-calendar .Class-calendar-text {
+	margin-top: 15px;
+	margin-bottom: -15px;
+}
+
+.Class-calendar-bottomtext {
+	max-width: 40%;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 0.9vw;
+  text-align: center;
+  margin: 1vh 0 5vh 0;
+  padding: 0;
+}
+
+/* Calendar */
+
+.container {
+	width: 60%;
+	min-width: 720px;
+}
+
+.event-list {
+	list-style: none;
+	font-family: inherit;
+	margin: 0px;
+	padding: 0px;
+}
+
+.event-list > li {
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 5px rgb(51, 51, 51);
+	box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+	padding: 0px;
+	margin: 0px 0px 20px;
+	height: 117px;
+}
+
+.event-list > li > time {
+	 display: inline-block;
+	 width: 100%;
+	 color: rgb(255, 255, 255);
+	 background-color: rgb(197, 44, 102);
+	 padding: 5px;
+	 text-align: center;
+	 text-transform: uppercase;
+	 height: 117px;
+}
+.event-list > li:nth-child(3n+1) > time {
+	background-color: rgba(30,172,202,0.9);
+}
+
+.event-list > li:nth-child(3n+2) > time {
+	background-color: rgba(207,70,74,0.9);
+}
+
+.event-list > li:nth-child(3n+3) > time {
+	background-color: rgba(194,165,54,0.9);
+}
+
+.event-list > li > time > span {
+ 	display: none;
+}
+
+.event-list > li > time > .day {
+ display: block;
+ font-size: 48pt;
+ font-weight: 100;
+ line-height: 1;
+ padding-top: 5px;
+}
+
+.event-list > li time > .month {
+ display: block;
+ font-size: 15pt;
+ font-weight: 500;
+ line-height: 1;
+}
+
+.event-list > li time > .year {
+ display: inline-block;
+ font-size: 12pt;
+ font-weight: 300;
+ line-height: 1;
+ padding-top: 5px;
+}
+
+.event-list > li > .info {
+ padding-top: 0px;
+ text-align: center;
+}
+
+.event-list > li > .info > .top-info > .title {
+ font-size: 15pt;
+ font-weight: 700;
+ margin: 2px 0px 2px 15px;
+}
+
+.event-list > li > .info > .top-info > .clocktime {
+ font-size: 12pt;
+ font-weight: 300;
+}
+
+.event-list > li > .info > .desc {
+ font-size: 12pt;
+ font-weight: 300;
+ margin: 2px 0px 2px 15px;
+}
+
+.event-list > li > .info > ul,
+.event-list > li > .social > ul {
+ display: table;
+ list-style: none;
+ margin: 10px 0px 0px;
+ padding: 0px;
+ width: 100%;
+ text-align: center;
+}
+
+.event-list > li > .social > ul {
+ margin: 0px;
+}
+
+.event-list > li > .info > ul > li,
+.event-list > li > .social > ul > li {
+	display: table-cell;
+	cursor: inherit;
+	color: rgb(30, 30, 30);
+	font-size: 11pt;
+	font-weight: 300;
+	padding: 5px 0px;
+}
+
+.event-list > li > .info > ul > li > a {
+ display: block;
+ width: 100%;
+ color: rgb(30, 30, 30);
+ text-decoration: none;
+ cursor: inherit;
+}
+
+.event-list > li > .social > ul > li {
+	 padding: 0px;
+}
+
+.event-list > li > .social > ul > li > a {
+	 display: block;
+	 width: 40px;
+	 padding: 10px 0px 9px;
+}
+
+.event-list > li > .info > ul > li:hover,
+.event-list > li > .social > ul > li:hover {
+ color: rgb(30, 30, 30);
+ background-color: rgb(230,230,230);
+}
+
+.facebook a,
+.twitter a,
+.linkedin a {
+ display: block;
+ width: 100%;
+ color: rgb(75, 110, 168);
+}
+
+.twitter a {
+ color: rgb(64, 153, 255);
+}
+
+.linkedin a {
+ color: rgb(72, 117, 180);
+}
+
+.facebook:hover a {
+ color: rgb(255, 255, 255);
+ background-color: rgb(59, 89, 152);
+}
+
+.twitter:hover a {
+ color: rgb(255, 255, 255);
+ background-color: rgb(64, 153, 255);
+}
+
+.linkedin:hover a {
+ color: rgb(255, 255, 255);
+ background-color: rgb(72, 117, 180);
+}
+
+ .event-list > li {
+	 position: relative;
+	 display: inline-block;
+	 width: 100%;
+	 padding: 0px;
+	 height: 117px;
+
+ }
+ .event-list > li > time,
+ .event-list > li > img  {
+	 display: inline-block;
+ }
+ .event-list > li > time,
+ .event-list > li > img {
+	 width: 120px;
+	 float: left;
+ }
+ .event-list > li > .info {
+	 background-color: rgb(245, 245, 245);
+	 overflow: hidden;
+ }
+ .event-list > li > time,
+ .event-list > li > img {
+	 width: 120px;
+	 height: 117px;
+	 padding: 0px;
+	 margin: 0px;
+ }
+ .event-list > li > .info {
+	 position: relative;
+	 height: 117px;
+	 text-align: left;
+	 padding-right: 40px;
+ }
+
+  .event-list > li > .info > .top-info {
+	 display: flex;
+ 	 flex-direction: row;
+ 	 flex-wrap: wrap;
+ 	 justify-content: flex-start;
+	}
+
+
+ .event-list > li > .info > .top-info > .title,
+ .event-list > li > .info > .desc {
+	 padding: 0px 10px;
+ }
+
+.event-list > li > .info > .top-info > .title {
+	margin-right: 0px;
+	order: 1;
+	flex-grow: 1;
+}
+
+.event-list > li > .info > .top-info > .clocktime {
+ font-size: 12pt;
+ font-weight: 300;
+ padding: 15px 30px 0px 0px;
+ order: 1;
+ flex-grow: 1;
+ text-align: right;
+}
+
+.event-list > li > .info > .desc {
+	padding: 0px 10px;
+	order: 1;
+	align-self: flex-end;
+}
+
+ .event-list > li > .info > ul {
+	 position: absolute;
+	 left: 0px;
+	 bottom: 0px;
+	 width: calc(100% - 39px);
+ }
+ .event-list > li > .social {
+	 position: absolute;
+	 top: 0px;
+	 right: 0px;
+	 display: block;
+	 width: 40px;
+ }
+		 .event-list > li > .social > ul {
+				 border-left: 1px solid rgb(230, 230, 230);
+		 }
+ .event-list > li > .social > ul > li {
+	 display: block;
+				 padding: 0px;
+ }
+ .event-list > li > .social > ul > li > a {
+	 display: block;
+	 width: 40px;
+	 padding: 10px 0px 9px;
+ }
+
+ #SoldOut {
+ 	opacity: 0.2;
+   background-color: #000;
+ 	cursor: not-allowed;
+ }
+
+ #SoldOut ul > li:hover,
+ #SoldOut .social > ul:hover > li > a {
+ 	cursor: not-allowed;
+	background-color: rgba(0,0,0,0);
+ }
+
+ #SoldOut .social .facebook  a:hover {
+ 	cursor: not-allowed;
+	background-color: rgba(0,0,0,0);
+	color: rgb(75, 110, 168);
+ }
+
+ #SoldOut .social .twitter  a:hover {
+ 	cursor: not-allowed;
+	background-color: rgba(0,0,0,0);
+	color: rgb(64, 153, 255);
+ }
+
+ #SoldOut .social .linkedin  a:hover {
+ 	cursor: not-allowed;
+	background-color: rgba(0,0,0,0);
+	color: rgb(72, 117, 180);
+ }
