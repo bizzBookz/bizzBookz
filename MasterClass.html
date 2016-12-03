@@ -146,8 +146,35 @@
                       <span class="clocktime"><span class="fa fa-clock-o"></span> 09.00 - 12.00 </span>
                     </div>
         						<p class="desc">Educatieve spelen in handelsvakken</p>
+                    <p class="more-info-desc collapse" id="viewDetails">Via een kort overzicht van het aanbod van bizzBOOKz maken de deelnemers kennis met verschillende educatieve bordspelen (PART of the AGREEMENT, TEAMWORK in PROGRESS, marketing MIXer, ieder zijn deel). Hierna spelen we van elk bordspel een inleidend spel waarbij de deelnemers een idee krijgen van de inhoud. Er wordt ook aandacht besteed aan hoe dit in de lessen kan verwerkt worden. De deelnemers krijgen zicht op de rol van de spelleider.</p>
       							<ul>
-      								<li style="width:50%;">Meer info</li>
+      								<li style="width:50%;" class="More-Info collapsed" data-toggle="collapse" data-target="#viewDetails">Meer info</li>
+                      <li style="width:50%;"><a href="http://www.ua.ac.be/main.aspx?c=*CNO&amp;n=42431&amp;groep=31&amp;id=16/ECO/903&amp;action=showinfo&amp;desc=We%20spelen%20een%20spel%20vandaag!%20Educatieve%20spelen%20in%20handelsvakken" target="_blank"><span class="fa fa-globe" ></span> Inschrijven via CNO Antwerpen</a></li>
+      							</ul>
+      						</div>
+      						<div class="social">
+      							<ul>
+      								<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+      								<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+      								<li class="linkedin" style="width:33%;"><a href="#linkedin"><span class="fa fa-linkedin"></span></a></li>
+      							</ul>
+      						</div>
+      					</li>
+                <li>
+      						<time datetime="2017-02-09">
+      							<span class="day">9</span>
+      							<span class="month">Februari</span>
+      							<span class="year">2017</span>
+      						</time>
+      						<div class="info">
+                    <div class="top-info">
+        							<h2 class="title">We spelen een spel vandaag!</h2>
+                      <span class="clocktime"><span class="fa fa-clock-o"></span> 09.00 - 12.00 </span>
+                    </div>
+        						<p class="desc">Educatieve spelen in handelsvakken</p>
+                    <p class="more-info-desc collapse" id="viewDetails2">Via een kort overzicht van het aanbod van bizzBOOKz maken de deelnemers kennis met verschillende educatieve bordspelen (PART of the AGREEMENT, TEAMWORK in PROGRESS, marketing MIXer, ieder zijn deel). Hierna spelen we van elk bordspel een inleidend spel waarbij de deelnemers een idee krijgen van de inhoud. Er wordt ook aandacht besteed aan hoe dit in de lessen kan verwerkt worden. De deelnemers krijgen zicht op de rol van de spelleider.</p>
+      							<ul>
+      								<li style="width:50%;" class="More-Info collapsed" data-toggle="collapse" data-target="#viewDetails2">Meer info</li>
                       <li style="width:50%;"><a href="http://www.ua.ac.be/main.aspx?c=*CNO&amp;n=42431&amp;groep=31&amp;id=16/ECO/903&amp;action=showinfo&amp;desc=We%20spelen%20een%20spel%20vandaag!%20Educatieve%20spelen%20in%20handelsvakken" target="_blank"><span class="fa fa-globe" ></span> Inschrijven via CNO Antwerpen</a></li>
       							</ul>
       						</div>
@@ -163,8 +190,23 @@
             </div>
           </div>
         </div>
+
         <p class="Master Class-calendar-bottomtext">Voor vragen kan u terecht op de <a href="../bizzBookz/Contact.html">Contact-pagina</a>, waar u het formulier kan invullen. Inschrijven kan ook via e-mail of telefoon.</p>
       </section>
+
+
+      <script>
+      $(document).ready(function () {
+        $(".More-Info").click(function() {
+          var $this = $(this);
+          if($this.hasClass('collapsed')){
+			      $this.text('Minder info');
+		      } else {
+            $this.text('Meer info');
+          }
+        });
+      });
+      </script>
 
       <div class="footer">
         <div class="footer-left">
