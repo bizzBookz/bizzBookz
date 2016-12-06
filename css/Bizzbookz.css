@@ -1033,10 +1033,8 @@ body {
 /* single event */
 .event-list > li {
 	background-color: rgb(255, 255, 255);
-	box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
 	padding: 0px;
-	margin: 0px 0px 15px;
-	height: 117px;
+	margin: 0px 0px 0px;
 	position: relative;
 	display: inline-block;
 	width: 100%;
@@ -1104,11 +1102,11 @@ body {
 	height: auto;
 	min-height: 117px;
 	overflow: hidden;
-	box-shadow: 0px 0px 4px rgba(51, 51, 51, 0.7);
 	background-color: rgb(245, 245, 245);
 	padding-top: 0px;
 	margin-right: 40px;
 	margin-bottom: 2%;
+	z-index: 99;
 }
 
 /* Social buttons */
@@ -1268,8 +1266,15 @@ body {
 /* Add this ID to element when course is sold out or recently happened */
 #SoldOut {
 	opacity: 0.2;
-	background-color: #000;
 	cursor: not-allowed;
+}
+
+#SoldOut > .info > ul > li {
+	font-size: 14pt;
+	color: black;
+	font-weight: 900;
+	text-transform: uppercase;
+
 }
 
 #SoldOut ul > li:hover,
@@ -1294,4 +1299,136 @@ body {
 	cursor: not-allowed;
 	background-color: rgba(0,0,0,0);
 	color: rgb(72, 117, 180);
+}
+
+/* Contact page */
+
+/* Contact options */
+
+.Contact.Class-Info {
+	font-family: 'Roboto', sans-serif;
+	background-color: rgba(82,93,113,0.9);
+	color: white;
+	min-height: 32vw;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.content .Contact.Class-Info > .Contact-options {
+	list-style-type: none;
+	font-size: 1vw;
+	width: 55%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	border: 0;
+
+	transition: all 1s ease 200ms;
+}
+
+.content .Contact.Class-Info > .Contact-options.big {
+	margin-top: 10%;
+	margin-bottom: 35%;
+
+	transition: all 400ms ease;
+}
+
+.content .Contact.Class-Info > .Contact-options > li {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+}
+
+.content .Contact.Class-Info > .Contact-options > li > a {
+	text-decoration: none;
+	font-style: inherit;
+	color: white;
+}
+
+.content .Contact.Class-Info .contact-telephone {
+	margin-top: 5.5%;
+	left: 21%;
+	position: absolute;
+	transition: height 0.2s ease;
+}
+
+.content .Contact.Class-Info .contact-email {
+	margin-top: 5.5%;
+	left: 31.5%;
+	position: absolute;
+	transition: height 0.2s ease;
+}
+
+.content .Contact.Class-Info .contact-order {
+	margin-top: 5.5%;
+	left: 42.7%;
+	position: absolute;
+	transition: height 0.2s ease;
+}
+
+.content .Contact.Class-Info .contact-map {
+	margin-top: 5.5%;
+	left: 32.1%;
+	position: absolute;
+	transition: all 500ms ease;
+
+}
+
+.content .Contact.Class-Info .collapse .contact-more {
+	font-family: inherit;
+	font-weight: 100;
+	font-size: 1vw;
+	align-self: flex-start;
+	border: 1px solid white;
+	background-color: white;
+	color: black;
+  padding: 12px 20px 7px 20px;
+  width: auto;
+  border-radius: 3px;
+  text-align: left;
+  white-space: nowrap;
+	line-height: 170%;
+	margin-bottom: 15%;
+}
+
+.content .Contact.Class-Info .contact-map > .contact-more {
+	padding: 10px;
+	padding-bottom: 2px;
+}
+
+.content .Contact.Class-Info .collapse .arrow-up {
+	align-self: flex-start;
+	margin-bottom: -0.7vw;
+	margin-left: 1.4vw;
+  width: 0;
+  height: 0;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+  border-bottom: 1.5vw solid white;
+  content:"";
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.content .Contact.Class-Info .contact-map .arrow-up {
+	align-self: flex-start;
+	margin-bottom: -0.7vw;
+	margin-left: 22vw;
+  width: 0;
+  height: 0;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+  border-bottom: 1.5vw solid white;
+	content:"";
+  display:inline-block;
+  vertical-align: middle;
 }
