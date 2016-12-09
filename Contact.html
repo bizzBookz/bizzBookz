@@ -104,40 +104,144 @@
               <p class="contact-more"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp; <a href:"mailto:info@bizzbookz.be"> &nbsp;info@bizzbookz.be</a></p>
             </div>
 
-            <li data-toggle="collapse" data-target="#order" data-parent="#contact-parent"><i class="fa fa-shopping-cart fa-4x" aria-hidden="true"></i></li>
+            <li class="dropping-order" data-toggle="collapse" data-target="#order" data-parent="#contact-parent"><i class="fa fa-shopping-cart fa-4x" aria-hidden="true"></i></li>
             <div class="contact-order collapse" id="order">
               <div class="arrow-up"></div>
-              <p class="contact-more"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp; <a href:"mailto:info@bizzbookz.be"> &nbsp;info@bizzbookz.be</a></p>
+              <form class="contact-form">
+                <div class="name">
+                  <label for="name">Naam *:</label>&nbsp; &nbsp;&nbsp;&nbsp;
+                  <input type="text" id="name" class="name_input" name="name" minlength="5" required />
+                </div>
+                <div class="telgsm">
+                  <label for="phonenr">Telefoon/GSM *:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" id="phonenr" class="phonenr_input" name="phonenr" placeholder="+3212345678" minlength="8" required />
+                </div>
+                </br>
+                <div class="address">
+                  <label for="address">Adres *:</label>&nbsp; &nbsp;&nbsp;&nbsp;
+                  <input type="text" id="address" class="address_input" name="address" minlength="10" required />
+                </div>
+                </br>
+                <div class="email">
+                  <label for="email">E-mail *:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="email" id="email" class="email_input" name="email" minlength="10" placeholder=" voorbeeld@email.com" required />
+                </div>
+                </br>
+                <div class="school">
+                  <label for="school">School / Instelling *:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" id="school" class="school_input" name="school" minlength="5" required />
+                </div>
+                </br>
+                <div class="stamboeknr">
+                  <label for="stamboeknr">Stamboeknr. (bij bestelling van  handleiding of Q&amp;A):</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" id="stamboeknr" class="stamboeknr_input" name="Stamboeknummer" placeholder="2yymmddxxxx" />
+                </div>
+                </br>
+                <div class="dienst">
+                  <label for="dienst">Dienst *:</label>&nbsp; &nbsp;&nbsp;&nbsp;
+                  <select id="dienst" class="dienst_input" name="Dienst" required>
+                    <option value="--" disabled selected>Selecteer uw gewenste dienst</option> 
+                    <option value="Algemeen">Algemeen</option>
+                    <option value="Business Class">Business Class</option>
+                    <option value="Master Class">Master Class</option>
+                    <option value="Game Class">Game Class</option>
+                  </select>
+                </div>
+                </br>
+                </br>
+                <div class="bericht">
+                  <label for="bericht">Bericht *:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <textarea id="bericht" class="bericht_input" name="Bericht" minlength="10" rows="5" placeholder="Gelieve hier uw bericht achter te laten.." required></textarea>
+                </div>
+                </br>
+                <div class="nieuwsbrief">
+                  <label for="nieuwsbrief">Nieuwsbrief *:</label>
+                  <div>
+                    <input type="radio" id="nieuwsbrief" class="nieuwsbrief_input" name="Nieuwsbrief" value="Ja" required>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<label for="Ja">Ik wens &eacute;&eacute;n maal per maand op de hoogte gebracht worden van nieuws en updates.</label>
+                  </div>
+                  </br>
+                  <div>
+                    <input type="radio" id="nieuwsbrief" class="nieuwsbrief_input" name="Nieuwsbrief" value="Nee">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<label for="Nee">Ik wens geen nieuws en updates te ontvangen.</label>
+                  </div>
+                </div>
+                <div class="voorwaarden">
+                  <div>
+                    <input type="checkbox" id="voorwaarden" class="voorwaarden_input" name="checkbox" value="check" required>
+                    &nbsp;*&nbsp; <label for="voorwaarden">Ik ga akkoord met de algemene voorwaarden. </label>
+                  </div>
+                </div>
+                </br>
+                </br>
+                <div class="verzenden">
+                  <input type="submit" id="verzenden" class="verzenden_input" value="Verzenden">
+                </div>
+              </form>
             </div>
 
-            <li class="bigmap" data-toggle="collapse" data-target="#map" data-parent="#contact-parent"><i class="fa fa-map-marker fa-4x" aria-hidden="true"></i></li>
+            <li class="dropping-map" data-toggle="collapse" data-target="#map" data-parent="#contact-parent"><i class="fa fa-map-marker fa-4x" aria-hidden="true"></i></li>
             <div class="contact-map collapse" id="map">
               <div class="arrow-up"></div>
               <p class="contact-more"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.0159121017796!2d4.244442215747908!3d50.90492167954064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c0433956ad41%3A0xcfed6f98d99b128f!2sLangestraat+120%2C+1730+Asse%2C+Belgium!5e0!3m2!1sen!2sse!4v1480972868483" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe></p>
             </div>
 
-            <li><a href="https://www.facebook.com/BizzbooKz/" target="_blank"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a></li>
+            <li class="outgoing-link"><a href="https://www.facebook.com/BizzbooKz/" target="_blank"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a></li>
 
-            <li><a href="https://twitter.com/bizzbookz" target="_blank"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a></li>
+            <li class="outgoing-link"><a href="https://twitter.com/bizzbookz" target="_blank"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a></li>
         </ul>
       </section>
     </div>
 
+
+
+
+
 <script>
+// This function will scroll to center the Map in normal Media.
+    $(".dropping-map").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#map").offset().top - 335
+      }, 1200);
+    });
+
+// This function will scroll to center the Order in normal Media.
+    $(".dropping-order").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#map").offset().top - 210
+      }, 1200);
+    });
+
+
+// This function changes the margins of the ul when the Map is opened/closed
     $("ul.Contact-options li").click(function (event) {
       var li = $(event.currentTarget);
-      if(li.hasClass("bigmap")) {
-        $(".Contact-options").toggleClass("big");
+      if(li.hasClass("dropping-map")) {
+        $(".Contact-options").toggleClass("expand-map");
       } else {
-        $(".Contact-options").removeClass("big");
+        $(".Contact-options").removeClass("expand-map");
       }
     });
 
-  $(".bigmap").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#map").offset().top - 335
-    }, 1200);
-});
+// This function changes the margins of the ul when the Order is opened/closed
+    $("ul.Contact-options li").click(function (event) {
+      var li = $(event.currentTarget);
+      if(li.hasClass("dropping-order")) {
+        $(".Contact-options").toggleClass("expand-order");
+      } else {
+        $(".Contact-options").removeClass("expand-order");
+      }
+    });
+
+
+// This function removes the collapse from the currently opened item when the Fb or Twitter link is clicked
+    $(".outgoing-link").click(function (event) {
+      var a = $(event.currentTarget);
+      if(a.hasClass("outgoing-link")) {
+        $(".collapse").removeClass("in");
+        $(".collapse").css('height','0px')
+      }
+    });
 </script>
 
     <div class="footer">
